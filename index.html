@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Oswald:wght@300&family=Raleway&family=Rubik+Iso&family=Tilt+Warp&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Crimlis </title>
+</head>
+<body id="body">
+    <nav>
+        <div class="flex-row-btwn nav-layout">
+            <div class="logo">
+                <h1>Abigail</h1>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="aboutme.html">About me </a></li>
+                    <li><a href="Skills.html">Skills </a></li>
+                    <li><a href="Portfolio.html">Portfolio </a></li>
+                    <li><i class="fa-solid fa-moon" id="dark-light" onclick="ChangeMode()"></i></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="landing-section">
+        <div class="flex-row middle-sec" id="particles-js">
+            <div class="icons flex-col">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-solid fa-globe"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="text">
+                <h1>Hi, I'm Abby</h1>
+                <h3>Full Stack Developer</h3>
+                <p>Intermediete level of experience,  building website using Html, CSS, JavaScript, React, API's Azure Data Studio <br> And a few other technologies</p>
+                <button class="dark-mode-btn btn" id="btn-1" href="contact.html">Contact me <i class="fa-regular fa-envelope"></i></button>
+            </div>
+            
+            <canvas id="canvas" ></canvas>
+        </div>  
+        
+    </section>
+    <section class="skills">
+        <div class="flex-row skills-container">
+            <div class="skills-item">
+                <i class="fa-solid fa-globe"></i>
+                <h3>Web Technologies</h3>
+                <p>Write some web technologies that i know</p>
+            </div>
+            <div class="skills-item">
+                <i class="fa-sharp fa-solid fa-microchip"></i>
+                <h3>Backend Technologies</h3>
+                <p>I will write my skills in here at some point</p>
+            </div>
+            <div class="skills-item">
+                <i class="fa-sharp fa-solid fa-database"></i>
+                <h3>Databases</h3>
+                <p>Database design and modeling skills and the technologies i implement with </p>
+            </div>
+
+        </div>
+    </section>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> 
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="main.js" type="text/JavaScript"></script>
+</body>
+</html>
