@@ -1,53 +1,9 @@
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 let coord = { x: 0, y: 0 };
-/*
-document.addEventListener("mousedown", stop);
-document.addEventListener("mouseup", start);
-window.addEventListener("resize", resize);
 
-resize();
-window.onload = () =>{
-    start();
-}
-function resize() {
-  ctx.canvas.width = window.innerWidth;
-  ctx.canvas.height = window.innerHeight;
-}
-function reposition(event) {
-  coord.x = event.clientX - canvas.offsetLeft - 10;
-  coord.y = event.clientY - canvas.offsetTop - 10;
-}
-function start(event) {
-  document.addEventListener("mousemove", draw);
-  reposition(event);
-}
-function stop() {
-  document.removeEventListener("mousemove", draw);
-}
-function draw(event) {
-  ctx.beginPath();
-    ctx.strokeStyle = "rgb(23, 23, 92)";
-    ctx.lineWidth = 10;
-    ctx.lineJoin = "round";
-    ctx.beginPath();
-    ctx.moveTo(coord.x, coord.y);
-    ctx.stroke();
-    reposition(event);
-    ctx.lineTo(coord.x, coord.y);
-    ctx.stroke();
-    setInterval(function(){ 
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        }, 
-        4000);
-}
 
-*/
 
-const ChangeMode = () => {
-    document.getElementById("body").style.backgroundColor = "whitesmoke"
-    document.getElementById("particles-js").style.backgroundColor ="whitesmoke"
-  }
 
 particlesJS("particles-js", 
 {"particles":{"number":{"value":80,"density":{"enable":true,"value_area":800}},
@@ -65,3 +21,25 @@ particlesJS("particles-js",
 "push":{"particles_nb":4},
 "remove":{"particles_nb":2}}},
 "retina_detect":true});
+
+//Toggle background color 
+const ChangeMode = () => {
+  var body = document.getElementById("body");
+  var elements = document.getElementsByClassName('textColorMode'), i, len;
+  
+
+  var currentColor = body.style.backgroundColor;
+  if (currentColor === "whitesmoke") {
+    body.style.backgroundColor = "rgba(6, 21, 38, 1)";
+    document.getElementById("particles-js").style.backgroundColor ="rgba(6, 21, 38, 1)"
+    for (i = 0, len = elements.length; i < len; i++) {
+      elements[i].style.color = 'whitesmoke';
+    }
+  } else {
+    body.style.backgroundColor = "whitesmoke";
+    document.getElementById("particles-js").style.backgroundColor ="whitesmoke"
+    for (i = 0, len = elements.length; i < len; i++) {
+      elements[i].style.color = '#2C81B7';
+    }
+  }
+}

@@ -24,7 +24,7 @@
                     <li><a href="aboutme.html">About me </a></li>
                     <li><a href="Skills.html">Skills </a></li>
                     <li><a href="Portfolio.html">Portfolio </a></li>
-                    <li><i class="fa-solid fa-moon" id="dark-light" onclick="ChangeMode()"></i></li>
+                    <button onclick="ChangeMode()"><i class="fa-solid fa-moon" id="dark-light" ></i></button>
 
                 </ul>
             </div>
@@ -35,39 +35,18 @@
             <div class="icons flex-col">
                 <i class="fa-brands fa-linkedin-in"></i>
                 <i class="fa-solid fa-globe"></i>
-                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-github"><a href="https://github.com/abdabTheCreator"></a></i>
             </div>
-            <div class="text">
-                <h1>Hi, I'm Abby</h1>
-                <h3>Full Stack Developer</h3>
-                <p>Intermediete level of experience,  building website using Html, CSS, JavaScript, React, API's Azure Data Studio <br> And a few other technologies</p>
+            <div class="text" id="changeTextColor">
+                <h1 class="textColorMode">Hi, I'm Abby</h1>
+                <h3 >Full Stack Developer</h3>
+                <p class="textColorMode">Intermediete level of experience,  building websites using current front end technologies <br> Containerizing applications using Docker and Kubernetes</p>
                 <button class="dark-mode-btn btn" id="btn-1" href="contact.html">Contact me <i class="fa-regular fa-envelope"></i></button>
             </div>
             
             <canvas id="canvas" ></canvas>
         </div>  
-        
-    </section>
-    <section class="skills">
-        <div class="flex-row skills-container">
-            <div class="skills-item">
-                <i class="fa-solid fa-globe"></i>
-                <h3>Web Technologies</h3>
-                <p>Write some web technologies that i know</p>
-            </div>
-            <div class="skills-item">
-                <i class="fa-sharp fa-solid fa-microchip"></i>
-                <h3>Backend Technologies</h3>
-                <p>I will write my skills in here at some point</p>
-            </div>
-            <div class="skills-item">
-                <i class="fa-sharp fa-solid fa-database"></i>
-                <h3>Databases</h3>
-                <p>Database design and modeling skills and the technologies i implement with </p>
-            </div>
 
-        </div>
-    </section>
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> 
     <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
     <script src="main.js" type="text/JavaScript"></script>
